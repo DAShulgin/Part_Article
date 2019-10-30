@@ -1,0 +1,23 @@
+.item {
+    width:  auto;
+    height: auto;
+    border: 5px solid #2b2521;
+    border-radius: 10px 10px 10px 10px;  
+    background: whitesmoke;
+    padding: 25px;
+    margin: 25px; 
+    text-align: left;
+    font-weight: bold;
+}
+.blok_1 {
+    text-align: center;
+    margin: 15px;   
+}
+.blok_2 {
+    margin: 20px;   
+}
+
+.btn {
+    text-align: left;
+    padding: 10px;
+}
