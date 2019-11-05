@@ -16,14 +16,13 @@ class ArticleContainer extends React.Component {
      AddArticle = {this.props.AddArticle}
      UpdateArticle = {this.props.UpdateArticle}
      DeleteArticle = {this.props.DeleteArticle}
-
     />
   }
 }
 
 const mapStateToProps = (state) => {
   return {
-    articles: state.articlePage.articles
+    articles: state.articlePage.articles,
   }
 }
 

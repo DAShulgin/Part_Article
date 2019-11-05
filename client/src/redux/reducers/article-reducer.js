@@ -4,8 +4,10 @@ const SET_ARTICLES = 'SET_ARTICLES';
 const ADD_ARTICLES = 'ADD_ARTICLES';
 
 
+
+
 let initialState = {
-    articles: []
+    articles: [] 
 };
 
 const articleReducer = (state = initialState, action) => {
@@ -14,7 +16,7 @@ const articleReducer = (state = initialState, action) => {
         case SET_ARTICLES:
             return { ...state, articles: action.articles };
         case ADD_ARTICLES:
-            return { ...state, articles:[ ...state.articles, action.articles] };    
+            return { ...state, articles:[ ...state.articles, action.articles] };
         default:
             return state;
     }
@@ -22,6 +24,7 @@ const articleReducer = (state = initialState, action) => {
 
 export const SetArticle = (articles) => ({ type: SET_ARTICLES, articles })
 export const SetNewArticle = (articles) => ({ type: ADD_ARTICLES, articles })
+
 
 
 export const getArticle = () => {
@@ -40,7 +43,7 @@ export const AddArticle = (articles) => {
 }
 export const UpdateArticle = (id, Record) => {
     return (dispatch) => {
-        RecordAPI.UpdateRecord(id);
+        RecordAPI.UpdateRecord(id, Record);
         dispatch(getArticle());
     }
 }

@@ -1,9 +1,9 @@
 .item {
-    width:  auto;
+    width:  1024px;
     height: auto;
     border: 5px solid #2b2521;
     border-radius: 10px 10px 10px 10px;  
-    background: whitesmoke;
+    background: rgba(178, 211, 238, 0.781);
     padding: 25px;
     margin: 25px; 
     text-align: left;
@@ -18,6 +18,6 @@
 }
 
 .btn {
-    text-align: left;
+    text-align: right;
     padding: 10px;
 }
